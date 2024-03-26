@@ -11,7 +11,6 @@ describe("deep copy test", () => {
   obj4.set("c", obj3);
 
   test.each([obj1, obj2, obj3])("deepCopy1 function test", (obj) => {
-    console.log(deepCopy1(obj));
     expect(deepCopy1(obj)).toEqual(obj);
   });
 
